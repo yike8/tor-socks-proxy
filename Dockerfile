@@ -12,7 +12,7 @@ RUN echo '@edge https://dl-cdn.alpinelinux.org/alpine/edge/community' >> /etc/ap
     rm -rf /var/cache/apk/* && \
     tor --version
 COPY --chown=tor:root torrc /etc/tor/
-RUN [ -f /var/log/tor/notices.log ] || touch /var/log/tor/notices.log && chown tor:nogroup /var/log/tor/notices.log
+#RUN [ -f /var/log/tor/notices.log ] || touch /var/log/tor/notices.log && chown tor:nogroup /var/log/tor/notices.log
 
 HEALTHCHECK --timeout=10s --start-period=60s \
     CMD curl --fail --socks5-hostname localhost:9150 -I -L 'https://www.facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion/' || exit 1
