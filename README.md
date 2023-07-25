@@ -32,6 +32,7 @@ Use the prefix `ghcr.io/` if you prefer to use GitHub Container Registry.
     ```sh
     docker build -t peterdavehello/tor-socks-proxy ./
     ```
+    
 2、run
     ```sh
     docker run -d --restart=always --name tor-socks-proxy -p 127.0.0.1:9150:9150/tcp -p 127.0.0.1:53:8853/udp peterdavehello/tor-socks-proxy
