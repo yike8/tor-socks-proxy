@@ -7,5 +7,5 @@ DNSPort 0.0.0.0:8853
 SocksPort 0.0.0.0:9150
 
 DataDirectory /var/lib/tor
-#Log notice stdout
-Log notice file /var/log/tor/notices.log
+Log notice stdout
+#Log notice file /var/log/tor/notices.log
