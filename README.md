@@ -118,6 +118,9 @@ Set the DNS server to `127.0.0.1` (Or another IP you set), use [macvk/dnsleaktes
 - IP Leak Tests: <https://ipleak.org/>
 - IP/DNS Detect: <https://ipleak.net/>
 
+## More
+torrc https://manpages.debian.org/testing/tor/torrc.5.en.html
+
 ## Note
 
 **For the Tor project sustainability, I strongly encourage you to help [setup Tor bridge/exit nodes](https://trac.torproject.org/projects/tor/wiki/TorRelayGuide)([**script**](https://github.com/PeterDaveHello/ubuntu-tor-simply-setup)) and [donate](https://donate.torproject.org/) money to the Tor project *(Not this proxy project)* when you have the ability/capacity!**
