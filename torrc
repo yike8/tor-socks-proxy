@@ -1,6 +1,10 @@
 HardwareAccel 1
 
-ExcludeNodes {cn},{hk},{mo},{tw}
+#GeoIPFile /home/tor/bin/geoip
+#GeoIPv6File /home/tor/bin/geoip6
+
+ExcludeNodes {cn},{hk},{mo},{kp},{ir},{sy},{pk},{cu},{vn}
+ExcludeExitNodes {cn},{hk},{mo},{kp},{ir},{sy},{pk},{cu},{vn}
 StrictNodes 1
 
 DNSPort 0.0.0.0:8853
@@ -9,3 +13,7 @@ SocksPort 0.0.0.0:9150
 DataDirectory /var/lib/tor
 Log notice stdout
 #Log notice file /var/log/tor/notices.log
+
+#test
+#curl --socks5-hostname 127.0.0.1:9150 https://check.torproject.org/api/ip
+#curl https://check.torproject.org/api/ip
